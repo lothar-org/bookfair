@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>首页 {$site_info.site_name|default=''}</title>
+    <meta name="keywords" content="{$site_info.site_seo_keywords|default=''}" />
+    <meta name="description" content="{$site_info.site_seo_description|default=''}">
+
+    <taglib name="app\portal\taglib\Portal"/>
+    <include file="public@function"/>
+
+    <meta charset="UTF-8">
+    <meta name="author" content="ThinkCMF">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+
+    <!-- Set render engine for 360 browser -->
+    <meta name="renderer" content="webkit">
+
+    <!-- No Baidu Siteapp-->
+    <meta http-equiv="Cache-Control" content="no-siteapp"/>
+
+    <!-- favicon 地址栏图标 -->
+    <link rel="icon" href="__TMPL__/public/assets/images/favicon.png" type="image/png">
+    <link rel="shortcut icon" href="__TMPL__/public/assets/images/favicon.png" type="image/png">
+
+    <!-- CSS -->
+    <link href="__TMPL__/public/assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="__TMPL__/public/assets/plugin/font-awesome/css/font-awesome.min.css" rel="stylesheet"
+          type="text/css">
+    <!--[if IE 7]>
+        <link rel="stylesheet" href="__TMPL__/public/assets/plugin/font-awesome/css/font-awesome-ie7.min.css">
+    <![endif]-->
+    <link href="__TMPL__/public/assets/css/style.css" rel="stylesheet">
+    <style>
+        /*html{filter:progid:DXImageTransform.Microsoft.BasicImage(grayscale=1);-webkit-filter: grayscale(1);}*/
+        #backtotop{position:fixed;bottom:50px;right:20px;display:none;cursor:pointer;font-size:50px;z-index:9999}
+        #backtotop:hover{color:#333}
+    </style>
+
+    <!-- JS -->
+    <!-- HTML5 shim for IE8 support of HTML5 elements -->
+    <!-- https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js -->
+    <!--[if lt IE 9]>
+        <script src="__TMPL__/public/assets/js/html5shiv.js"></script>
+    <![endif]-->
+    <script type="text/javascript">
+        //全局变量
+        var GV = {
+            ROOT: "__ROOT__/",
+            WEB_ROOT: "__WEB_ROOT__/",
+            JS_ROOT: "static/js/"
+        };
+    </script>
+    <script src="__TMPL__/public/assets/js/jquery-1.10.2.min.js"></script>
+    <script src="__TMPL__/public/assets/js/jquery-migrate-1.2.1.js"></script>
+    <script src="__STATIC__/js/wind.js"></script>
+
+    <!-- Plugin -->
+ 
+</head>
+
+<body>
